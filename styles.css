@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&family=Rubik+Dirt&display=swap');
+
+
+.header{
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.header h1{
+    color: #ea7317;    
+    font-size: 4rem;
+    font-family: 'Rubik Dirt', cursive;
+    margin: 0px;
+
+}
+
+.header ul{
+    list-style-type: none;
+    margin: 20px auto 0px auto;
+
+}
+
+.header li{
+    display: inline;
+    
+}
+
+.header li a{
+    color: #2364aa;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px 50px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.header li a:hover{
+    color: #3da5d9;
+}
+
+.fa-cart-shopping{
+    color: white;
+    font-size: 2rem;
+    margin: 25px auto 0px auto;
+    padding: 0px;
+}
+
+.action{
+    width: 60%;
+    display:flexbox; 
+    margin: 100px 0px;
+    
+
+}
+
+.jumbotron h1{
+    color: white;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px 25px 0px 25px;
+
+}
+
+.jumbotron p{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 5px auto 25px auto;
+    padding: 25px;
+    width: 75%;
+}
+
+.jumbotron img{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+   
+}
+
+.jumbotron button{
+    background-color: #2364aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    width: 200px;
+    height: auto;
+    margin: 25px auto;
+  
+}
+
+.jumbotron button:hover{
+    background-color: #3da5d9;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .header h1{
+        font-size: 1.75rem;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+
+    .fa-cart-shopping, .header li{
+        display: none;
+    }
+
+    .action{
+        width: 100%;
+        margin: 0px;
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+    }
+
+    .jumbotron h1{
+        font-size: 1.75rem;
+        margin: 10px;
+    }
+
+    .jumbotron p{
+        font-size: 1.25rem;
+        width: 100%;
+        margin: 10px 0px;
+        padding: 10px;
+    }
+
+    .jumbotron img{
+        height: 100vh;
+
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+
+    .jumbotron img{
+        object-fit:cover;
+        object-position: top;
+        
+    }
+}
