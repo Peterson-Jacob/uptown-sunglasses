@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&family=Rubik+Dirt&display=swap');
 
+body{
+    background-color: black;
+}
 
 .header{
     background-color: rgba(0, 0, 0, 0.3);
@@ -7,11 +10,8 @@
 }
 
 .header h1{
-    color: #ea7317;    
-    font-size: 4rem;
+    color: #ea7317;     
     font-family: 'Rubik Dirt', cursive;
-    margin: 0px;
-
 }
 
 .header ul{
@@ -27,12 +27,8 @@
 
 .header li a{
     color: #2364aa;
-    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    text-align: center;
-    margin: 0px 50px;
-    padding: 10px;
     text-decoration: none;
 }
 
@@ -42,44 +38,27 @@
 
 .fa-cart-shopping{
     color: white;
-    font-size: 2rem;
-    margin: 25px auto 0px auto;
-    padding: 0px;
 }
 
-.action{
-    width: 60%;
-    display:flexbox; 
-    margin: 100px 0px;
-    
-
-}
 
 .jumbotron h1{
-    color: white;
-    font-size: 4rem;
+    color: #3da5d9;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-align: center;
-    margin: 50px 25px 0px 25px;
-
 }
 
 .jumbotron p{
     color: white;
-    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-align: center;
-    margin: 5px auto 25px auto;
-    padding: 25px;
-    width: 75%;
 }
 
 .jumbotron img{
-    height: 100%;
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     right: 0;
     z-index: -1;
@@ -93,11 +72,8 @@
     align-items: center;
     border: 2px solid white;
     color: white;
-    font-size: 1rem;
     width: 200px;
     height: auto;
-    margin: 25px auto;
-  
 }
 
 .jumbotron button:hover{
@@ -105,7 +81,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 576px) {
 
     .header h1{
         font-size: 1.75rem;
@@ -122,9 +98,7 @@
     .action{
         width: 100%;
         margin: 0px;
-        position: absolute;
-        left: 0;
-        bottom: 10%;
+  
     }
 
     .jumbotron h1{
@@ -139,18 +113,150 @@
         padding: 10px;
     }
 
-    .jumbotron img{
-        height: 100vh;
-
+    .jumbotron button{
+        font-size: 1rem;
+        margin: 10px auto;
     }
 
 }
 
-@media only screen and (min-width: 601px) {
+@media  (min-width: 577px) {
+
+    .header h1{
+        font-size: 2.25rem;
+        text-align: center;
+        margin: 10px auto 0px auto;
+    }
+    
+    .header li a{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0px 25px;
+        padding: 10px;
+    }
+
+    .fa-cart-shopping{
+        font-size: 1.75rem;
+        margin: 20px auto 0px auto;
+        padding: 1px;
+    }
+
+    .action{
+        width: 100%;
+        display:flexbox; 
+        margin: 150px 0px 0px 0px;
+
+    }
+
+    .jumbotron h1{
+        font-size: 2.25rem;
+        margin: 50px 25px 0px 25px;
+    }
+
+    .jumbotron p{
+        font-size: 1.25rem;
+        margin: 5px auto 25px auto;
+        padding: 25px;
+        width: 75%;
+    }
+
+    .jumbotron button{
+        font-size: 1rem;
+        margin: 25px auto;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .header h1{
+        font-size: 2.5rem;
+        margin: 10px auto 0px auto;
+    }
+
+    .header li a{
+        font-size: 1.75rem;
+        margin: 0px 35px;
+    }
+
+}
+
+@media  (min-width: 992px) {
+
+    .header h1{
+        font-size: 2.1rem;
+        text-align: left;
+        margin: 15px auto;
+    }
+
+    .header li a{
+        font-size: 1.75rem;
+        margin: 0px 25px;
+    }
+
+    .fa-cart-shopping{
+        font-size: 1.75rem;
+    }
+
+    .action{
+        width: 60%;
+    
+    }
+
+    .jumbotron h1{
+        font-size: 2.1rem;
+    }
+
+    .jumbotron p{
+        font-size: 1.4rem;
+    }
+
+    .jumbotron button{
+        font-size: 1.1rem;
+    }
+
+   
+
+}
+
+@media (min-width: 1200px) {
+
+    .header h1{
+        font-size: 2.5rem;
+    }
+
+    .header li a{
+        font-size: 2rem;
+        margin: 0px 35px;
+    }
+
+    .fa-cart-shopping{
+        font-size: 2rem;
+    }
+
+
+    .jumbotron h1{
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p{
+        font-size: 1.75rem;
+    }
+
+    .jumbotron button{
+        font-size: 1.4rem;
+    }
 
     .jumbotron img{
         object-fit:cover;
         object-position: top;
-        
+    }
+}
+
+@media(min-width: 1600px) {
+
+    .action{
+        width: 50%;
+       
     }
 }
