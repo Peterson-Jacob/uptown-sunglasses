@@ -1,22 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,100;1,700&family=Rubik+Dirt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     background-color: black;
 }
 
-.header{
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-
+ 
 }
+
 
 .header h1{
     color: #ea7317;     
     font-family: 'Rubik Dirt', cursive;
+
 }
 
 .header ul{
     list-style-type: none;
-    margin: 20px auto 0px auto;
+    margin: 10px auto 0px auto;
 
 }
 
@@ -28,17 +41,59 @@ body{
 .header li a{
     color: #2364aa;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-decoration: none;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration:none;
 }
 
 .header li a:hover{
     color: #3da5d9;
+    text-decoration: underline;
 }
 
 .fa-cart-shopping{
     color: white;
 }
+
+.hamburger {
+    display:block;
+  }
+  
+  .hamburger div {
+    width: 40px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 6px;
+    transition: 0.8s;
+  }
+  
+  .mobileNav {
+    display: none;
+  }
+  
+  .show .barOne {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .show .barTwo {
+    opacity: 0;
+  }
+  
+  .show .barThree {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .show .mobileNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ea7317;
+    height: 100vh;
+    
+  }
 
 
 .jumbotron h1{
@@ -46,6 +101,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-align: center;
+    text-decoration:wavy;
 }
 
 .jumbotron p{
@@ -62,6 +118,7 @@ body{
     top: 0;
     right: 0;
     z-index: -1;
+    
    
 }
 
@@ -74,30 +131,62 @@ body{
     color: white;
     width: 200px;
     height: auto;
-}
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 
-.jumbotron button:hover{
-    background-color: #3da5d9;
 }
 
 
 @media (max-width: 576px) {
 
+    .header{
+        background-color: black;
+    }
+
     .header h1{
         font-size: 1.75rem;
-        text-align: center;
+        text-align: right;
         margin: 10px;
         padding: 10px;
-        
     }
 
     .fa-cart-shopping, .header li{
         display: none;
     }
 
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 0; 
+        left: 0;
+        margin: 20px auto;
+        width: 100%;
+        cursor:auto;
+      }
+    
+      .hamburger a {
+        font-size: 2.25rem;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        padding: 10px;
+        margin-top: 25px;
+      }
+
+      .mobile-cart{
+        display: block;
+      }
+
+      .mobileNav{
+        
+       
+      }
+
     .action{
         width: 100%;
-        margin: 0px;
+        margin: 50% 0px 0px 0px;
   
     }
 
@@ -138,19 +227,23 @@ body{
     .fa-cart-shopping{
         font-size: 1.75rem;
         margin: 20px auto 0px auto;
-        padding: 1px;
+        padding: 0px;
+    }
+
+    .hamburger{
+        display: none;
     }
 
     .action{
-        width: 100%;
-        display:flexbox; 
-        margin: 150px 0px 0px 0px;
-
+        width: 70%;
+        display:flexbox;
+        margin: 100px 0px 0px 0px;
+    
     }
 
     .jumbotron h1{
         font-size: 2.25rem;
-        margin: 50px 25px 0px 25px;
+        margin: 25px 25px 0px 25px;
     }
 
     .jumbotron p{
@@ -183,10 +276,12 @@ body{
 
 @media  (min-width: 992px) {
 
+ 
+
     .header h1{
         font-size: 2.1rem;
         text-align: left;
-        margin: 15px auto;
+        margin: 10px auto;
     }
 
     .header li a{
@@ -200,6 +295,8 @@ body{
 
     .action{
         width: 60%;
+        margin-top: 75px;
+        padding: 25px;
     
     }
 
@@ -215,11 +312,17 @@ body{
         font-size: 1.1rem;
     }
 
+    .jumbotron img{
+        object-fit:cover;
+        object-position: top;
+    }
    
 
 }
 
 @media (min-width: 1200px) {
+
+    
 
     .header h1{
         font-size: 2.5rem;
@@ -227,7 +330,7 @@ body{
 
     .header li a{
         font-size: 2rem;
-        margin: 0px 35px;
+        margin: 0px 40px;
     }
 
     .fa-cart-shopping{
@@ -247,10 +350,6 @@ body{
         font-size: 1.4rem;
     }
 
-    .jumbotron img{
-        object-fit:cover;
-        object-position: top;
-    }
 }
 
 @media(min-width: 1600px) {
@@ -259,4 +358,48 @@ body{
         width: 50%;
        
     }
+}
+
+@media (orientation: landscape) and (max-width: 992px)  {
+ 
+  
+    .header h1{
+        font-size: 2rem;
+    }
+
+    .header li a{
+        font-size: 1.25rem;
+    }
+
+    .fa-cart-shopping{
+        font-size: 1.25rem;
+       
+    }
+
+    .action{
+        width: 70%;
+        margin: 25px 0px 0px 0px;
+    }
+
+    .jumbotron h1{
+        font-size: 2rem;
+    }
+
+    .jumbotron p{
+        font-size: 1rem;
+        margin: 0px auto;
+    }
+
+    .jumbotron img{
+        height: auto;
+        object-fit:cover;
+        object-position: top;
+    }
+
+    .jumbotron button{
+        margin: 5px auto;
+    }
+
+
+
 }
