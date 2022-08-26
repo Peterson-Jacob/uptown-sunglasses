@@ -11,20 +11,19 @@ body{
 }
 
 .overlay{
-    position: absolute;
-    left: 0;
+    position:absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
- 
+    background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 
 .header h1{
     color: #ea7317;     
     font-family: 'Rubik Dirt', cursive;
-
 }
 
 .header ul{
@@ -35,20 +34,21 @@ body{
 
 .header li{
     display: inline;
-    
-}
-
-.header li a{
     color: #2364aa;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: italic;
     text-decoration:none;
+    cursor: pointer;    
 }
 
-.header li a:hover{
+.header li:hover{
     color: #3da5d9;
     text-decoration: underline;
+}
+
+.header li span{
+    color: #ea7317;
 }
 
 .fa-cart-shopping{
@@ -95,6 +95,14 @@ body{
     
   }
 
+  .nav-about-open{
+    display: none;
+  }
+
+  .nav-deals-open{
+    display: none;
+  }
+
 
 .jumbotron h1{
     color: #3da5d9;
@@ -109,6 +117,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-align: center;
+
 }
 
 .jumbotron img{
@@ -118,8 +127,6 @@ body{
     top: 0;
     right: 0;
     z-index: -1;
-    
-   
 }
 
 .jumbotron button{
@@ -133,7 +140,40 @@ body{
     height: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    box-shadow: 0px 0px 35px #ea7317;
+}
 
+.nav-about-open{
+    width: 40%;
+    height: auto;
+    margin: 25px 0px;
+    float: right;
+}
+
+.about h1{
+    color: #ea7317;     
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 25px auto;
+    padding: 5px;
+} 
+
+.about img{
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    padding: 5px;
+}
+
+.about p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    width: 80%;
+    margin: 25px auto;
+    padding: 5px;
 }
 
 
@@ -144,9 +184,9 @@ body{
     }
 
     .header h1{
-        font-size: 1.75rem;
-        text-align: right;
-        margin: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 10px auto;
         padding: 10px;
     }
 
@@ -207,6 +247,8 @@ body{
         margin: 10px auto;
     }
 
+    
+
 }
 
 @media  (min-width: 577px) {
@@ -217,7 +259,7 @@ body{
         margin: 10px auto 0px auto;
     }
     
-    .header li a{
+    .header li{
         font-size: 1.5rem;
         text-align: center;
         margin: 0px 25px;
@@ -267,7 +309,7 @@ body{
         margin: 10px auto 0px auto;
     }
 
-    .header li a{
+    .header li{
         font-size: 1.75rem;
         margin: 0px 35px;
     }
@@ -284,7 +326,7 @@ body{
         margin: 10px auto;
     }
 
-    .header li a{
+    .header li{
         font-size: 1.75rem;
         margin: 0px 25px;
     }
@@ -328,7 +370,7 @@ body{
         font-size: 2.5rem;
     }
 
-    .header li a{
+    .header li{
         font-size: 2rem;
         margin: 0px 40px;
     }
@@ -367,7 +409,7 @@ body{
         font-size: 2rem;
     }
 
-    .header li a{
+    .header li{
         font-size: 1.25rem;
     }
 
