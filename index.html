@@ -14,24 +14,24 @@
     <title>Uptown Sunglass Co.</title>
 </head>
 <body>
-<div class="overlay">
+<div class="overlay move">
     <div class="container-fluid header">
         <div class="row">
-            <div class="col-sm-12 col-lg-5">
+            <div class="col-12 col-sm-12 col-lg-5">
                 <h1>Uptown Sunglass Co.</h1>
             </div>
-            <div class="col-sm-10 col-lg-6">
+            <div class="col-sm-10 col-lg-5">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#deals">Deals</a></li>
-                    <li><a href="#shop">Shop</a></li>  
+                    <li class="aboutBtn">About</li>
+                    <li class="dealsBtn">Deals</li>
+                    <li class="shopBtn"><span>Shop</span></li>  
                 </ul>
             </div>
-            <div class="col-sm-2 col-lg-1">
-                <a href="#checkout"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="col-sm-2 col-lg-2">
+                <li class="checkoutBtn"><i class="fa-solid fa-cart-shopping"></i></li>
             </div>
         </div> 
-        <div class="hamburger" id="hamburger-nav" onclick="toggle(this)">
+        <div class="col-1 hamburger" id="hamburger-nav" onclick="toggle(this)">
             <div class="barOne"></div>
             <div class="barTwo"></div>
             <div class="barThree"></div>
@@ -41,18 +41,50 @@
                 <a href="#shop">Shop</a>
                 <a href="#checkout"><i class="fa-solid fa-cart-shopping mobile-cart"></i></a>
             </ul>  
-        </div>   
+        </div> 
     </div>
     
     <div class="container-fluid jumbotron">
-        <img src="images/model1.jpg" alt="">
+        
         <div class="action">
             <h1>Z-Model Shades</h1>
             <p>The z-model shades is one of our most unique styles of Sunglass. The Z-Model shades keep away both uv and blue
                  light protecting your eyes. While keeping you looking your best. THe Z-model are half off so order now</p>
             <button type="button" class="btn">Add to Cart</button>
-        </div>
+
+    </div>
+        <img class="cover" src="images/model1.jpg" alt="">   
     </div>
 </div>
+<div class="container-fluid nav-about-open">
+    <div class="about">
+        <h1>About Uptown</h1>
+        <img src="images/model3.jpg" alt="">
+        <p>Uptwon is a small sunglass company. We got our start in 1989 in Dallas, TX. Where the founder Ashley Smith in his small compact garage wanted
+            to create a sunglass that could really protect the eyes from all those harmful uv rays. Since then Uptown Sunglass Company has exploded and
+            to a multi-million dollar company that has over tens tousands of employees. So if you need some great sunglasses you have come to the right 
+            place because, Uptown sunglasses are always for your face.
+        </p>
+    </div>
+</div>
+<div class="container-fluid nav-deals-open">
+    <div class="deals">
+        <h1>Deals</h1>
+        <img src="images/model2.jpg" alt="">
+        <div class="deal-card">
+            <img src="images/glasses3.jpg" alt="">
+            <h1>Z-model Glasses</h1>
+            <h2>$<span>34.99</span>$ 19.99</h2>
+            <button type="button" class="btn">Add to Cart</button>
+        </div>
+        <div class="deal-card">
+            <img src="images/glasses1.jpg" alt="">
+            <h1>X-model Glasses</h1>
+            <h2>$<span>29.99</span>$ 17.99</h2>
+            <button type="button" class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+</div>  
 </body>
 </html>
