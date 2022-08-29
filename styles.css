@@ -103,13 +103,24 @@ body{
     display: none;
   }
 
+  .nav-shop-open{
+    display: none;
+  }
+
+  .nav-checkout-open{
+    display: none;
+  }
+
+  .nav-thankyou-open{
+    display: none;
+  }
+
 
 .jumbotron h1{
     color: #3da5d9;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-align: center;
-    text-decoration:wavy;
 }
 
 .jumbotron p{
@@ -143,38 +154,58 @@ body{
     box-shadow: 0px 0px 35px #ea7317;
 }
 
-.nav-about-open{
-    width: 40%;
-    height: auto;
-    margin: 25px 0px;
-    float: right;
-}
 
-.about h1{
+.about h1, .headerDeals, .shop h1{
     color: #ea7317;     
     font-family: 'Rubik Dirt', cursive;
-    font-size: 2rem;
     text-align: center;
-    margin: 25px auto;
-    padding: 5px;
 } 
 
 .about img{
-    max-width: 400px;
     height: auto;
     display: block;
-    margin: 25px auto;
-    padding: 5px;
 }
 
 .about p{
     color: #ffffff;
     text-align: center;
-    font-size: 1rem;
-    width: 80%;
-    margin: 25px auto;
-    padding: 5px;
 }
+
+.card{
+    height: auto;
+    background-color: #3da5d9;
+}
+
+.card h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.card h2{
+    text-align: center;
+    color: green;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.card h2 span{
+    color: red;
+    text-decoration: line-through;
+}
+
+.card button{
+    width: 40%;
+    background-color: #2364aa;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border: 2px solid white;
+
+}
+
+
 
 
 @media (max-width: 576px) {
@@ -321,18 +352,18 @@ body{
  
 
     .header h1{
-        font-size: 2.1rem;
+        font-size: 2rem;
         text-align: left;
         margin: 10px auto;
     }
 
     .header li{
-        font-size: 1.75rem;
+        font-size: 1.4rem;
         margin: 0px 25px;
     }
 
     .fa-cart-shopping{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .action{
@@ -343,7 +374,7 @@ body{
     }
 
     .jumbotron h1{
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 
     .jumbotron p{
@@ -358,7 +389,71 @@ body{
         object-fit:cover;
         object-position: top;
     }
+
+    .nav-about-open{
+        width: 40%;
+        height: auto;
+        margin: 50px 0px;
+        float: right;
+    }
+
+    .about h1, .headerDeals{
+        font-size: 2rem;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    .about p{
+        font-size: 1.15rem;
+        width: 80%;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    .about img{
+        max-width: 300px;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+  
+    .nav-deals-open{
+        width: 40%;
+        margin: 10px auto 0px auto;
+        height: auto;
+        float: right;
+    }
+
+    .nav-shop-open{
+        width: 40%;
+        margin: 25px auto;
+        float: right;
+    }
+
+    .card-container{
+        height: 85vh;
+        overflow-y: auto;
+    }
+
+    .card{
+        max-width: 300px;
+        margin: 25px auto;
+        padding: 0px;
+    }
+
+    .card h1{
+        margin: 5px auto;
+        font-size: 2rem;
+    }
+
+    .card h2{
+        font-size: 1.5rem;
+    }
    
+    .card button{
+        font-size: 1rem;
+        margin: 10px auto;
+    }
 
 }
 
@@ -392,6 +487,40 @@ body{
         font-size: 1.4rem;
     }
 
+    .about h1, .headerDeals{
+        font-size: 2.5rem;
+    }
+
+    .about img{
+        max-width: 400px;
+    }
+
+    .about p{
+        font-size: 1.4rem;
+    }
+
+    .nav-deals-open{
+        margin: 0px auto;
+    }
+
+   .card{
+    max-width: 350px;
+   }
+
+   .card h1{
+    font-size: 2.5rem;
+   }
+
+   .card h2{
+    font-size: 1.75rem;
+   }
+
+   .card button{
+    font-size: 1.25rem;
+    margin: 5px auto;
+   }
+
+
 }
 
 @media(min-width: 1600px) {
@@ -400,9 +529,14 @@ body{
         width: 50%;
        
     }
+
+    .about img{
+        max-width: 500px;
+    }
+
 }
 
-@media (orientation: landscape) and (max-width: 992px)  {
+@media (orientation: landscape) and (max-width: 991px)  {
  
   
     .header h1{
