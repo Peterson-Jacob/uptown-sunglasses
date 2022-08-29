@@ -11,20 +11,20 @@
     <link rel="stylesheet" href="styles.css">
     <script src="hamburger.js"></script> 
     <script src="index.js" defer></script>
-    <title>Uptown Sunglass Co.</title>
+    <title>Uptown Sunglass</title>
 </head>
 <body>
 <div class="overlay move">
     <div class="container-fluid header">
         <div class="row">
-            <div class="col-12 col-sm-12 col-lg-5">
-                <h1>Uptown Sunglass Co.</h1>
+            <div class="col-12 col-sm-12 col-lg-4">
+                <h1 class="header-logo">Uptown Sunglass</h1>
             </div>
-            <div class="col-sm-10 col-lg-5">
+            <div class="col-sm-10 col-lg-6">
                 <ul>
-                    <li class="aboutBtn">About</li>
-                    <li class="dealsBtn">Deals</li>
-                    <li class="shopBtn"><span>Shop</span></li>  
+                    <li class="list-item aboutBtn">About</li>
+                    <li class="list-item dealsBtn">Deals</li>
+                    <li class="list-item shopBtn"><span>Shop</span></li>  
                 </ul>
             </div>
             <div class="col-sm-2 col-lg-2">
@@ -69,22 +69,58 @@
 </div>
 <div class="container-fluid nav-deals-open">
     <div class="deals">
-        <h1>Deals</h1>
-        <img src="images/model2.jpg" alt="">
-        <div class="deal-card">
+        <h1 class="headerDeals">Deals</h1>
+        <div class="card">
             <img src="images/glasses3.jpg" alt="">
             <h1>Z-model Glasses</h1>
-            <h2>$<span>34.99</span>$ 19.99</h2>
+            <h2><span>$34.99</span> $19.99</h2>
             <button type="button" class="btn">Add to Cart</button>
         </div>
-        <div class="deal-card">
-            <img src="images/glasses1.jpg" alt="">
+        <div class="card">
+            <img src="images/glasses4.jpg" alt="">
             <h1>X-model Glasses</h1>
-            <h2>$<span>29.99</span>$ 17.99</h2>
+            <h2><span>$29.99</span> $17.99</h2>
             <button type="button" class="btn">Add to Cart</button>
         </div>
     </div>
-
 </div>  
+<div class="container-fluid nav-shop-open">
+    <div class="shop">
+        <h1>Shop</h1>
+    <div class="d-flex flex-wrap card-container">
+        <div class="card">
+            <img src="images/glasses3.jpg" alt="">
+            <h1>Z-model Glasses</h1>
+            <h2><span>$34.99</span> $19.99</h2>
+            <button type="button" class="btn">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/glasses4.jpg" alt="">
+            <h1>X-model Glasses</h1>
+            <h2><span>$29.99</span> $17.99</h2>
+            <button type="button" class="btn">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/glasses2.jpg" alt="">
+            <h1>Y-model Glasses</h1>
+            <h2>$44.99</h2>
+            <button type="button" class="btn">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/glasses1.jpg" alt="">
+            <h1>A-model Glasses</h1>
+            <h2>$59.99</h2>
+            <button type="button" class="btn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid nav-checkout-open">
+    <h1>Checkout</h1>
+    <div class="cart-items"></div>
+</div>
+<div class="container-fluid nav-thankyou-open">
+    <p><span>Thank You</span>for your order it should arrive next to never. Have A Great Day</p>
+</div>
 </body>
 </html>
