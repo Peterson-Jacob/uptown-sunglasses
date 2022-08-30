@@ -205,7 +205,18 @@ body{
 
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #ea7317; 
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background: #2364aa; 
+  }
+   
 
 
 @media (max-width: 576px) {
@@ -248,11 +259,6 @@ body{
 
       .mobile-cart{
         display: block;
-      }
-
-      .mobileNav{
-        
-       
       }
 
     .action{
@@ -331,6 +337,74 @@ body{
         margin: 25px auto;
     }
 
+   
+    .nav-about-open{
+        width: 100%;
+        height: auto;
+        margin: 150px auto;
+        position: relative;
+    
+    }
+
+    .about h1, .headerDeals, .shop h1{
+        font-size: 2.25rem;
+        margin: 0px auto;
+    }
+
+    .about p{
+        font-size: 1.15rem;
+        width: 80%;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    .about img{
+        max-width: 500px;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+  
+    .nav-deals-open{
+        position: relative;
+        width: 100%;
+        margin: 125px auto;
+        height: auto;
+        
+    }
+
+    .nav-shop-open{
+        position: relative;
+        width: 100%;
+        margin: 125px auto;
+        
+    }
+
+    .card-container{
+        height: 70vh;
+        overflow-y: auto;
+    }
+
+    .card{
+        max-width: 400px;
+        margin: 25px auto;
+        padding: 0px;
+    }
+
+    .card h1{
+        margin: 5px auto;
+        font-size: 1.75rem;
+    }
+
+    .card h2{
+        font-size: 1.25rem;
+    }
+   
+    .card button{
+        font-size: 1rem;
+        margin: 10px auto;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -392,35 +466,24 @@ body{
 
     .nav-about-open{
         width: 40%;
-        height: auto;
         margin: 50px 0px;
         float: right;
     }
 
-    .about h1, .headerDeals{
+    .about h1, .headerDeals, .shop h1{
         font-size: 2rem;
-        margin: 10px auto;
-        padding: 5px;
-    }
-
-    .about p{
-        font-size: 1.15rem;
-        width: 80%;
         margin: 10px auto;
         padding: 5px;
     }
 
     .about img{
         max-width: 300px;
-        margin: 10px auto;
-        padding: 5px;
     }
 
   
     .nav-deals-open{
         width: 40%;
         margin: 10px auto 0px auto;
-        height: auto;
         float: right;
     }
 
@@ -432,17 +495,13 @@ body{
 
     .card-container{
         height: 85vh;
-        overflow-y: auto;
     }
 
     .card{
         max-width: 300px;
-        margin: 25px auto;
-        padding: 0px;
     }
 
     .card h1{
-        margin: 5px auto;
         font-size: 2rem;
     }
 
@@ -452,7 +511,6 @@ body{
    
     .card button{
         font-size: 1rem;
-        margin: 10px auto;
     }
 
 }
@@ -487,7 +545,7 @@ body{
         font-size: 1.4rem;
     }
 
-    .about h1, .headerDeals{
+    .about h1, .headerDeals, .shop h1{
         font-size: 2.5rem;
     }
 
