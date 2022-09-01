@@ -155,7 +155,7 @@ body{
 }
 
 
-.about h1, .headerDeals, .shop h1{
+.about h1, .headerDeals, .shop h1, .checkHeader{
     color: #ea7317;     
     font-family: 'Rubik Dirt', cursive;
     text-align: center;
@@ -173,7 +173,8 @@ body{
 
 .card{
     height: auto;
-    background-color: #3da5d9;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 4px solid #ea7317;
 }
 
 .card h1{
@@ -346,7 +347,7 @@ body{
     
     }
 
-    .about h1, .headerDeals, .shop h1{
+    .about h1, .headerDeals, .shop h1, .checkHeader{
         font-size: 2.25rem;
         margin: 0px auto;
     }
@@ -374,6 +375,13 @@ body{
     }
 
     .nav-shop-open{
+        position: relative;
+        width: 100%;
+        margin: 125px auto;
+        
+    }
+
+    .nav-checkout-open{
         position: relative;
         width: 100%;
         margin: 125px auto;
@@ -470,7 +478,7 @@ body{
         float: right;
     }
 
-    .about h1, .headerDeals, .shop h1{
+    .about h1, .headerDeals, .shop h1, .checkHeader{
         font-size: 2rem;
         margin: 10px auto;
         padding: 5px;
@@ -488,6 +496,13 @@ body{
     }
 
     .nav-shop-open{
+        width: 40%;
+        margin: 25px auto;
+        float: right;
+    }
+
+    
+    .nav-checkout-open{
         width: 40%;
         margin: 25px auto;
         float: right;
@@ -545,7 +560,7 @@ body{
         font-size: 1.4rem;
     }
 
-    .about h1, .headerDeals, .shop h1{
+    .about h1, .headerDeals, .shop h1, .checkHeader{
         font-size: 2.5rem;
     }
 
