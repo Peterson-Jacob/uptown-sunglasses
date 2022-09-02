@@ -10,7 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <script src="hamburger.js"></script> 
+    <script src="purchase.js"></script>
     <script src="index.js" defer></script>
+
     <title>Uptown Sunglass</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
                 <ul>
                     <li class="list-item aboutBtn">About</li>
                     <li class="list-item dealsBtn">Deals</li>
-                    <li class="list-item shopBtn"><span>Shop</span></li>  
+                    <li class="list-item shopBtn" ><span>Shop</span></li>  
                 </ul>
             </div>
             <div class="col-sm-2 col-lg-2">
@@ -50,7 +52,7 @@
             <h1>Z-Model Shades</h1>
             <p>The z-model shades is one of our most unique styles of Sunglass. The Z-Model shades keep away both uv and blue
                  light protecting your eyes. While keeping you looking your best. THe Z-model are half off so order now</p>
-            <button type="button" class="btn">Add to Cart</button>
+            <button type="button" class="zBtn" name="zBuy">Add to Cart</button>
 
     </div>
         <img class="cover" src="images/model1.jpg" alt="">   
@@ -74,13 +76,13 @@
             <img src="images/glasses3.jpg" alt="">
             <h1>Z-model Glasses</h1>
             <h2><span>$34.99</span> $19.99</h2>
-            <button type="button" class="btn">Add to Cart</button>
+            <button type="button" class="zBtn" name="zBuy">Add to Cart</button>
         </div>
         <div class="card">
             <img src="images/glasses4.jpg" alt="">
             <h1>X-model Glasses</h1>
             <h2><span>$29.99</span> $17.99</h2>
-            <button type="button" class="btn">Add to Cart</button>
+            <button type="button" class="xBtn">Add to Cart</button>
         </div>
     </div>
 </div>  
@@ -92,32 +94,36 @@
             <img src="images/glasses3.jpg" alt="">
             <h1>Z-model Glasses</h1>
             <h2><span>$34.99</span> $19.99</h2>
-            <button type="button" class="btn">Add to Cart</button>
+            <button type="button" class="zBtn" name="zBuy">Add to Cart</button>
         </div>
         <div class="card">
             <img src="images/glasses4.jpg" alt="">
             <h1>X-model Glasses</h1>
             <h2><span>$29.99</span> $17.99</h2>
-            <button type="button" class="btn">Add to Cart</button>
+            <button type="button" class="xBtn">Add to Cart</button>
         </div>
         <div class="card">
             <img src="images/glasses2.jpg" alt="">
             <h1>Y-model Glasses</h1>
             <h2>$44.99</h2>
-            <button type="button" class="btn">Add to Cart</button>
+            <button type="button" class="yBtn">Add to Cart</button>
         </div>
         <div class="card">
             <img src="images/glasses1.jpg" alt="">
             <h1>A-model Glasses</h1>
             <h2>$59.99</h2>
-            <button type="button" class="btn">Add to Cart</button>
+            <button type="button" class="aBtn">Add to Cart</button>
         </div>
     </div>
 </div>
 </div>
 <div class="container-fluid nav-checkout-open">
-    <h1 class="checkHeader">Checkout</h1>
-    <div class="cart-items"></div>
+    <div class="checkout">
+        <h1 class="checkHeader">Checkout</h1>
+        <div class="cart-items"></div>
+        
+        <input type="text" name="total" value= "0.00" id="total" disabled>
+    </div>
 </div>
 <div class="container-fluid nav-thankyou-open">
     <p><span>Thank You</span>for your order it should arrive next to never. Have A Great Day</p>
