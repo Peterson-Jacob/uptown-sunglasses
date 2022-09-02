@@ -218,6 +218,22 @@ body{
     background: #2364aa; 
   }
    
+  .checkout{
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .checkout input{
+    width: 250px;
+    height: auto;
+    margin: 5px auto;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: black;
+    border: none;
+
+  }
 
 
 @media (max-width: 576px) {
