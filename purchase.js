@@ -5,6 +5,7 @@ window.onload = () =>{
     const xPurchase = document.getElementsByClassName('xBtn');
     const yPurchase = document.getElementsByClassName('yBtn');
     const aPurchase = document.getElementsByClassName('aBtn');
+    const check = document.getElementById('checkBtn');
     const cart = document.getElementById("cart-items");
 
 
@@ -12,6 +13,16 @@ window.onload = () =>{
     let xCount = 0;
     let yCount = 0;
     let aCount = 0;
+
+    check.onclick = () =>{
+        //alert("you clicked me");
+
+        if(amt.value == "0"){
+            alert("Your cart is empty");
+        }else{
+            alert("Thank you for shopping with us");
+        }
+    }
 
 
 
@@ -46,7 +57,7 @@ window.onload = () =>{
         cart.appendChild(zDiv);
         }
         if(zCount > 1){
-           document.getElementById('zCountid').textContent = "quanity " + quanity; 
+           document.getElementById('zCountid').textContent = "Amount " + quanity; 
            document.getElementById('zPriceid').textContent = " Price $" + itemPrice;
         }
 
@@ -91,7 +102,7 @@ window.onload = () =>{
         cart.appendChild(xDiv);
         }
         if(xCount > 1){
-           document.getElementById('xCountid').textContent = "quanity " + quanity; 
+           document.getElementById('xCountid').textContent = "Amount " + quanity; 
            document.getElementById('xPriceid').textContent = " Price $" + itemPrice;
         }
 
@@ -156,7 +167,7 @@ window.onload = () =>{
         cart.appendChild(yDiv);
         }
         if(yCount > 1){
-           document.getElementById('yCountid').textContent = "quanity " + quanity; 
+           document.getElementById('yCountid').textContent = "Amount " + quanity; 
            document.getElementById('yPriceid').textContent = " Price $" + itemPrice;
         }
 
@@ -200,7 +211,7 @@ window.onload = () =>{
         cart.appendChild(aDiv);
         }
         if(aCount > 1){
-           document.getElementById('aCountid').textContent = "quanity " + quanity; 
+           document.getElementById('aCountid').textContent = "Amount " + quanity; 
            document.getElementById('aPriceid').textContent = " Price $" + itemPrice;
         }
 
