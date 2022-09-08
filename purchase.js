@@ -5,7 +5,7 @@ window.onload = () =>{
     const xPurchase = document.getElementsByClassName('xBtn');
     const yPurchase = document.getElementsByClassName('yBtn');
     const aPurchase = document.getElementsByClassName('aBtn');
-    const check = document.getElementById('checkBtn');
+   // const check = document.getElementById('checkBtn');
     const cart = document.getElementById("cart-items");
 
 
@@ -14,15 +14,17 @@ window.onload = () =>{
     let yCount = 0;
     let aCount = 0;
 
-    check.onclick = () =>{
-        //alert("you clicked me");
+    // check.onclick = () =>{
+    //     //alert("you clicked me");
 
-        if(amt.value == "0"){
-            alert("Your cart is empty");
-        }else{
-            alert("Thank you for shopping with us");
-        }
-    }
+    //     if(amt.value == "0"){
+    //         alert("Your cart is empty");
+    //     }else{
+    //        // alert("Thank you for shopping with us");
+    //        gsap.to('.nav-checkout-open', {opacity: 0})
+    //        gsap.to('.nav-thankyou-open', {display: 'block'})
+    //     }
+    // }
 
 
 
