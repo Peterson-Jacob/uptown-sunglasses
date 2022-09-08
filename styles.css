@@ -303,6 +303,11 @@ body{
   }
 
 
+  .nav-thankyou-open p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 3rem;
+  }
 
 @media (max-width: 576px) {
 
@@ -473,6 +478,12 @@ body{
         
     }
 
+    .nav-thankyou-open{
+        position: relative;
+        width: 100%;
+        margin: 125px auto;
+    }
+
     .card-container{
         height: 70vh;
         overflow-y: auto;
@@ -594,6 +605,14 @@ body{
 
     
     .nav-checkout-open{
+        width: 40%;
+        margin: 25px auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav-thankyou-open{
         width: 40%;
         margin: 25px auto;
         position: absolute;
