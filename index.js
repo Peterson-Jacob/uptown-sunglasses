@@ -7,6 +7,7 @@ const shOpen = document.querySelector('.nav-shop-open');
 const ckBtn = document.querySelector('.checkoutBtn');
 const ckOpen = document.querySelector('.nav-checkout-open');
 const front = document.querySelector('.move');  
+const check = document.getElementById('checkBtn');
 
 
 const t = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
@@ -14,12 +15,8 @@ const tl = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true})
 const tl2 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
 const tl3 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
 const tl4 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
+const tl5 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
 
-
-const x = "deals";
-const y = "about";
-const q = "shop";
-const c = "checkout";
 
 if(document.body.offsetWidth > 576 && document.body.offsetWidth < 991){
 
@@ -50,6 +47,9 @@ if(document.body.offsetWidth > 576 && document.body.offsetWidth < 991){
     tl3.from( '.shop' , 1, {x: '-250', opacity: 0}) 
     tl4.to('.nav-checkout-open', {display: 'block'})
     tl4.from( '.checkout' , 1, {x: '-250', opacity: 0}) 
+    tl5.to('.nav-checkout-open', {display: 'none'})
+    tl5.to('.nav-thankyou-open', {display: 'block'})
+    
 }
 
  abtBtn.addEventListener('click', () =>{
@@ -102,9 +102,14 @@ function toggleTween(tween){
     
     }
 
+    if(tl5.reversed() == false){
+      tl5.reverse(true)
+     }
+
     tl2.reverse(true)
     tl3.reverse(true)
     tl4.reverse(true)
+    
     tl.reversed() ? tween.play() : tween.reverse();
    
   }
@@ -116,6 +121,10 @@ function toggleTween(tween){
     }
     if(tl2.reversed() == true){
      t.play()
+   }
+
+   if(tl5.reversed() == false){
+    tl5.reverse(true)
    }
    
     tl.reverse(true)
@@ -133,6 +142,10 @@ function toggleTween(tween){
      t.play()
    }
 
+   if(tl5.reversed() == false){
+    tl5.reverse(true)
+   }
+
     tl.reverse(true)
     tl2.reverse(true)
     tl4.reverse(true)
@@ -143,15 +156,37 @@ function toggleTween(tween){
     
     if(tl4.reversed() == false){
       t.reverse()
+      tl5.reverse(true);
   
     }
     if(tl4.reversed() == true){
      t.play()
    }
 
+   check.onclick = () =>{
+    tl5.play();
+    
+ }
+ 
     tl.reverse(true)
     tl2.reverse(true)
     tl3.reverse(true)
     tl4.reversed() ? tween.play() : tween.reverse(); 
-  }  
-}
+  } 
+  
+//   if(tween == tl5){
+    
+//     if(tl5.reversed() == false){
+//       t.reverse()
+//       tl5.reverse()
+  
+//     }
+//     if(tl5.reversed() == true){
+//      t.play()
+//    }
+
+//    tl4.reverse(true)
+//    tl5.reversed() ? tween.play() : tween.reverse(); 
+//   }
+  
+ }
