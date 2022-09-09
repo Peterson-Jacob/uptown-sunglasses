@@ -8,6 +8,8 @@ const ckBtn = document.querySelector('.checkoutBtn');
 const ckOpen = document.querySelector('.nav-checkout-open');
 const front = document.querySelector('.move');  
 const check = document.getElementById('checkBtn');
+const amt = document.getElementById("total");
+
 
 
 const t = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
@@ -164,8 +166,13 @@ function toggleTween(tween){
    }
 
    check.onclick = () =>{
+
+    if(amt.value == "0"){
+         alert("Your cart is empty");
+       }else{
     tl5.play();
     
+    }
  }
  
     tl.reverse(true)
@@ -173,20 +180,5 @@ function toggleTween(tween){
     tl3.reverse(true)
     tl4.reversed() ? tween.play() : tween.reverse(); 
   } 
-  
-//   if(tween == tl5){
     
-//     if(tl5.reversed() == false){
-//       t.reverse()
-//       tl5.reverse()
-  
-//     }
-//     if(tl5.reversed() == true){
-//      t.play()
-//    }
-
-//    tl4.reverse(true)
-//    tl5.reversed() ? tween.play() : tween.reverse(); 
-//   }
-  
  }
