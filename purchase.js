@@ -5,7 +5,6 @@ window.onload = () =>{
     const xPurchase = document.getElementsByClassName('xBtn');
     const yPurchase = document.getElementsByClassName('yBtn');
     const aPurchase = document.getElementsByClassName('aBtn');
-   // const check = document.getElementById('checkBtn');
     const cart = document.getElementById("cart-items");
 
 
@@ -13,20 +12,6 @@ window.onload = () =>{
     let xCount = 0;
     let yCount = 0;
     let aCount = 0;
-
-    // check.onclick = () =>{
-    //     //alert("you clicked me");
-
-    //     if(amt.value == "0"){
-    //         alert("Your cart is empty");
-    //     }else{
-    //        // alert("Thank you for shopping with us");
-    //        gsap.to('.nav-checkout-open', {opacity: 0})
-    //        gsap.to('.nav-thankyou-open', {display: 'block'})
-    //     }
-    // }
-
-
 
     const zBuy = () =>{
         zCount += 1;
@@ -42,8 +27,9 @@ window.onload = () =>{
         const zPrice = document.createElement('p');
         const zBut = document.createElement('button');
 
-        if(zCount == 1){
 
+        if(zCount == 1){
+        zDiv.classList.add('zModDiv');
         zDiv.appendChild(zImg);
         zImg.src = 'images/glasses3.jpg';
         zDiv.appendChild(zMod);
