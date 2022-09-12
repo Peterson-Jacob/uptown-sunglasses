@@ -7,9 +7,6 @@ const shOpen = document.querySelector('.nav-shop-open');
 const ckBtn = document.querySelector('.checkoutBtn');
 const ckOpen = document.querySelector('.nav-checkout-open');
 const front = document.querySelector('.move');  
-const check = document.getElementById('checkBtn');
-const amt = document.getElementById("total");
-
 
 
 const t = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
@@ -33,6 +30,8 @@ if(document.body.offsetWidth > 576 && document.body.offsetWidth < 991){
   tl3.from('.shop', {opacity: 0})
   tl4.to('.nav-checkout-open', {display: 'block'})
   tl4.from('.checkout', {opacity: 0})
+  tl5.to('.nav-checkout-open', {display: 'none'})
+  tl5.to('.nav-thankyou-open', {display: 'block'})
 }
 
   if(document.body.offsetWidth >= 992){
@@ -44,11 +43,11 @@ if(document.body.offsetWidth > 576 && document.body.offsetWidth < 991){
     tl.to('.nav-about-open', {display: 'block'})
     tl.from( '.about' , 1, {x: '-500', opacity: 0}) 
     tl2.to('.nav-deals-open', {display: 'block'})
-    tl2.from( '.deals'  , 1, {x: '-250', opacity: 0}) 
+    tl2.from( '.deals'  , 1, {y: '-250', opacity: 0}) 
     tl3.to('.nav-shop-open', {display: 'block'})
-    tl3.from( '.shop' , 1, {x: '-250', opacity: 0}) 
+    tl3.from( '.shop' , 1, {x: '250', opacity: 0}) 
     tl4.to('.nav-checkout-open', {display: 'block'})
-    tl4.from( '.checkout' , 1, {x: '-250', opacity: 0}) 
+    tl4.from( '.checkout' , 1, {y: '-500', opacity: 0}) 
     tl5.to('.nav-checkout-open', {display: 'none'})
     tl5.to('.nav-thankyou-open', {display: 'block'})
     
@@ -156,6 +155,7 @@ function toggleTween(tween){
 
   if(tween == tl4){
     
+
     if(tl4.reversed() == false){
       t.reverse()
       tl5.reverse(true);
@@ -164,16 +164,6 @@ function toggleTween(tween){
     if(tl4.reversed() == true){
      t.play()
    }
-
-   check.onclick = () =>{
-
-    if(amt.value == "0"){
-         alert("Your cart is empty");
-       }else{
-    tl5.play();
-    
-    }
- }
  
     tl.reverse(true)
     tl2.reverse(true)
