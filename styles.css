@@ -217,35 +217,22 @@ body{
   ::-webkit-scrollbar-thumb {
     background: #2364aa; 
   }
-   
-  .checkout{
-    width: 80%;
-    margin: 10px auto;
-  }
 
-  .checkDiv{
-    width: 50%;
-    position: fixed;
-    right: 0;
-  }
+  /*checkout*/
+   
+
 
   .checkDiv button{
     background-color: #2364aa;
     color: #ffffff;
-    font-size: 1.4rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     border: 2px solid white;
-    margin: 10px 0px 10px 60px;
-    
+    border-radius: 10px; 
+    padding: 5px; 
   }
 
   .checkout input{
-    width: 100px;
-    height: auto;
-    margin: 0px 10px;
-    font-size: 2rem;
-    text-align: left;
     color: #ffffff;
     background-color: black;
     border: none;
@@ -253,13 +240,8 @@ body{
   }
 
   .checkout label{
-    font-size: 2rem;
-    text-align: center;
     color: #ffffff;
-
   }
-
-  
 
   .cart-items div{
     border: 4px solid #2364aa;
@@ -268,8 +250,6 @@ body{
     height: auto;
     display: flex;
     justify-content: space-between;
-    margin: 25px auto;
-    padding: 10px;
   }
 
   .cart-items div img{
@@ -280,33 +260,34 @@ body{
   }
 
   .cart-items div h1{
-    font-size: 2rem;
     color: #ffffff;
-    margin: 20px auto;
   }
 
   .cart-items div p{
-    font-size: 1rem;
     color: #ffffff;
-    margin: 25px auto;
   }
 
   .cart-items div button{
-    margin: 25px 10px;
     background-color: #2364aa;
     color: #ffffff;
-    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     border: 2px solid white;
+    border-radius: 10px;  
 
   }
-
 
   .nav-thankyou-open p{
     color: #ffffff;
     text-align: center;
     font-size: 3rem;
+    margin: 10px;
+  }
+
+  .checkDiv p{
+    color: red;
+    text-align: center;
+    font-size: 2rem;
   }
 
 @media (max-width: 576px) {
@@ -373,9 +354,6 @@ body{
         font-size: 1rem;
         margin: 10px auto;
     }
-
-    
-
 }
 
 @media  (min-width: 577px) {
@@ -509,6 +487,58 @@ body{
         margin: 10px auto;
     }
 
+    /*checkout*/
+    
+    .checkout{
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .checkout input{
+        width: 75px;
+        height: auto;
+        margin: 0px 10px;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .checkout label{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+      .checkDiv{
+        width: 50%;
+        margin: 0px auto;
+     
+      }
+
+      .checkDiv button{
+        font-size: 1.25rem;
+        margin: 10px auto;
+      }
+
+    .cart-items div{
+        margin: 15px auto;
+        padding: 5px;
+    }
+
+    .cart-items div h1{
+        font-size: 1.5rem;
+        margin: 15px auto;
+    }
+
+    .cart-items div p{
+        font-size: 1rem;
+        margin: 17px auto;
+    }
+
+    .cart-items div button{
+        margin: auto;
+        font-size: 1rem;
+        padding: 5px; 
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -526,8 +556,6 @@ body{
 }
 
 @media  (min-width: 992px) {
-
- 
 
     .header h1{
         font-size: 2rem;
@@ -548,7 +576,6 @@ body{
         width: 60%;
         margin-top: 75px;
         padding: 25px;
-    
     }
 
     .jumbotron h1{
@@ -640,11 +667,35 @@ body{
         font-size: 1rem;
     }
 
+    .checkDiv{
+        width: 80%;
+    }
+
+    .checkDiv button{
+        font-size: 1rem;
+    }
+
+    .cart-items div{
+        padding: 2px;
+    }
+    .cart-items div h1{
+        font-size: 1.25rem;
+        margin: 20px auto;
+    }
+
+    .cart-items div p{
+        font-size: .75rem;
+        margin: 22px auto;
+    }
+
+    .cart-items div button{
+        font-size: .6rem;
+    }
+
+
 }
 
 @media (min-width: 1200px) {
-
-    
 
     .header h1{
         font-size: 2.5rem;
@@ -684,8 +735,6 @@ body{
         font-size: 1.4rem;
     }
 
-  
-
    .card{
     max-width: 350px;
    }
@@ -701,6 +750,29 @@ body{
    .card button{
     font-size: 1.25rem;
     margin: 5px auto;
+   }
+
+   .checkDiv{
+    width: 60%;
+    position: fixed;
+    right: 0; 
+
+   }
+
+   .cart-items div{
+    padding: 5px;
+   }
+
+   .cart-items div h1{
+    font-size: 1.5rem;
+   }
+
+   .cart-items div p{
+    font-size: 1rem;
+   }
+
+   .cart-items div button{
+    font-size: .75rem;
    }
 
 
