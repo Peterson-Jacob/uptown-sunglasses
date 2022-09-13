@@ -1,5 +1,5 @@
 window.onload = () =>{
-    
+   
     const amt = document.getElementById("total");
     const zPurchase = document.getElementsByClassName('zBtn');
     const xPurchase = document.getElementsByClassName('xBtn');
@@ -8,6 +8,8 @@ window.onload = () =>{
     const cart = document.getElementById("cart-items");
     const check = document.getElementById("checkBtn");
     const emptyMessage = document.getElementById('cartEmpty');
+
+ 
 
     check.onclick = () =>{
         if(amt.value == "0"){
@@ -126,7 +128,7 @@ window.onload = () =>{
 
     zPurchase[0].onclick = () =>{
         zBuy();
-    
+       
     }
     zPurchase[1].onclick = () =>{
         zBuy();
