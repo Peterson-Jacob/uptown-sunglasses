@@ -286,7 +286,7 @@ body{
 
   .checkDiv p{
     color: red;
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
   }
 
@@ -653,6 +653,7 @@ body{
 
     .card{
         max-width: 300px;
+        margin: 15px auto;
     }
 
     .card h1{
@@ -756,11 +757,11 @@ body{
     width: 60%;
     position: fixed;
     right: 0; 
-
    }
 
    .cart-items div{
     padding: 5px;
+    
    }
 
    .cart-items div h1{
@@ -781,12 +782,19 @@ body{
 @media(min-width: 1600px) {
 
     .action{
-        width: 50%;
-       
+        width: 50%;   
     }
 
     .about img{
         max-width: 500px;
+    }
+
+    .checkDiv{
+        width: 50%;
+    }
+
+    .cart-items div{
+        width: 80%;
     }
 
 }
