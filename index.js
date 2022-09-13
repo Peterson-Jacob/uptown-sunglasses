@@ -16,9 +16,11 @@ const tl3 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true}
 const tl4 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
 const tl5 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
 
+//window.addEventListener("resize", screenWidth);
 
-if(document.body.offsetWidth > 576 && document.body.offsetWidth < 991){
+let winWidth = document.body.offsetWidth;
 
+if(winWidth > 576 && winWidth < 991){
   t.add('change')
   t.to('.jumbotron', 1, {opacity: 0} )
   t.to('.jumbotron', {display: 'none'}, 'change')
@@ -34,8 +36,8 @@ if(document.body.offsetWidth > 576 && document.body.offsetWidth < 991){
   tl5.to('.nav-thankyou-open', {display: 'block'})
 }
 
-  if(document.body.offsetWidth >= 992){
-
+  if(winWidth >= 992){
+    
     t.add('start')
     t.to(front, 1, {width: '60%', ease: Power2.easeOut},'start')
     t.to('.action', {width: '80%'}, 'start')
@@ -52,6 +54,8 @@ if(document.body.offsetWidth > 576 && document.body.offsetWidth < 991){
     tl5.to('.nav-thankyou-open', {display: 'block'})
     
 }
+
+
 
  abtBtn.addEventListener('click', () =>{
   active(tl)
@@ -172,3 +176,4 @@ function toggleTween(tween){
   } 
     
  }
+
