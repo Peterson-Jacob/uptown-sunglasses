@@ -24,6 +24,7 @@ body{
 .header h1{
     color: #ea7317;     
     font-family: 'Rubik Dirt', cursive;
+    cursor: pointer;
 }
 
 .header ul{
@@ -146,12 +147,15 @@ body{
     justify-content: center;
     align-items: center;
     border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
     color: white;
     width: 200px;
     height: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     box-shadow: 0px 0px 35px #ea7317;
+
 }
 
 
@@ -175,6 +179,8 @@ body{
     height: auto;
     background-color: rgba(0, 0, 0, 0.4);
     border: 4px solid #ea7317;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .card h1{
@@ -203,6 +209,8 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
 
 }
 
@@ -470,7 +478,7 @@ body{
     .card{
         max-width: 400px;
         margin: 25px auto;
-        padding: 0px;
+        padding: 0px 0px 10px 0px;
     }
 
     .card h1{
@@ -483,8 +491,8 @@ body{
     }
    
     .card button{
-        font-size: 1rem;
-        margin: 10px auto;
+        font-size: 1rem; 
+        margin: 10px auto; 
     }
 
     /*checkout*/
