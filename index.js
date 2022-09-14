@@ -7,6 +7,7 @@ const shOpen = document.querySelector('.nav-shop-open');
 const ckBtn = document.querySelector('.checkoutBtn');
 const ckOpen = document.querySelector('.nav-checkout-open');
 const front = document.querySelector('.move');  
+const logo = document.querySelector('.header-logo');  
 
 
 const t = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
@@ -16,11 +17,18 @@ const tl3 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true}
 const tl4 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
 const tl5 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
 
-//window.addEventListener("resize", screenWidth);
+// window.onresize = () =>{
+//   location.reload();
+// }
+
+
+gsap.from('.header-logo', 1, {opacity: 0, y: '-50', x: '-50', ease: 'bounce'})
+
 
 let winWidth = document.body.offsetWidth;
 
 if(winWidth > 576 && winWidth < 991){
+  
   t.add('change')
   t.to('.jumbotron', 1, {opacity: 0} )
   t.to('.jumbotron', {display: 'none'}, 'change')
@@ -37,7 +45,7 @@ if(winWidth > 576 && winWidth < 991){
 }
 
   if(winWidth >= 992){
-    
+  
     t.add('start')
     t.to(front, 1, {width: '60%', ease: Power2.easeOut},'start')
     t.to('.action', {width: '80%'}, 'start')
@@ -83,6 +91,18 @@ ckBtn.addEventListener('click', () =>{
   active(tl4)
   toggleTween(tl4)
    
+})
+
+logo.addEventListener('click', () =>{
+
+  if(t.reversed() == false){
+    t.reverse()
+    tl.reverse(true)
+    tl2.reverse(true)
+    tl3.reverse(true)
+    tl4.reverse(true)
+    tl5.reverse(true)
+  }
 })
 
 function active(z){
