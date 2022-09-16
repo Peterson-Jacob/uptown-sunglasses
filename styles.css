@@ -17,9 +17,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-
 }
-
 
 .header h1{
     color: #ea7317;     
@@ -56,46 +54,6 @@ body{
     color: white;
 }
 
-.hamburger {
-    display:block;
-  }
-  
-  .hamburger div {
-    width: 40px;
-    height: 2px;
-    background-color: #ffffff;
-    margin: 6px;
-    transition: 0.8s;
-  }
-  
-  .mobileNav {
-    display: none;
-  }
-  
-  .show .barOne {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
-  
-  .show .barTwo {
-    opacity: 0;
-  }
-  
-  .show .barThree {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
-  }
-  
-  .show .mobileNav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #ea7317;
-    height: 100vh;
-    
-  }
-
   .nav-about-open{
     display: none;
   }
@@ -130,15 +88,6 @@ body{
     font-weight: 400;
     text-align: center;
 
-}
-
-.jumbotron img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
 }
 
 .jumbotron button{
@@ -229,7 +178,6 @@ body{
   /*checkout*/
    
 
-
   .checkDiv button{
     background-color: #2364aa;
     color: #ffffff;
@@ -300,59 +248,48 @@ body{
 
 @media (max-width: 576px) {
 
-    .header{
-        background-color: black;
-    }
+   
 
     .header h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
-        margin: 10px auto;
-        padding: 10px;
+        margin: 5px auto;
+        padding: 5px;
     }
 
-    .fa-cart-shopping, .header li{
-        display: none;
+    .header li{
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 0px 8px;
+        padding: 5px;
     }
 
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 0; 
-        left: 0;
-        margin: 20px auto;
-        width: 100%;
-        cursor:auto;
-      }
-    
-      .hamburger a {
-        font-size: 2.25rem;
-        color: #ffffff;
-        text-align: center;
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        padding: 10px;
-        margin-top: 25px;
-      }
-
-      .mobile-cart{
-        display: block;
-      }
+    .fa-cart-shopping{
+        font-size: 1.25rem;
+        margin: 15px auto;
+    }
 
     .action{
         width: 100%;
-        margin: 50% 0px 0px 0px;
-  
+        margin: 75% 0px 0px 0px;
     }
 
+    .jumbotron img{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+ 
     .jumbotron h1{
         font-size: 1.75rem;
         margin: 10px;
     }
 
     .jumbotron p{
-        font-size: 1.25rem;
+        font-size: 1rem;
         width: 100%;
         margin: 10px 0px;
         padding: 10px;
@@ -362,6 +299,114 @@ body{
         font-size: 1rem;
         margin: 10px auto;
     }
+
+    .nav-about-open{
+        position: relative;
+        margin: 40% auto; 
+      }
+
+     
+     .about h1, .headerDeals, .shop h1, .checkHeader{
+        font-size: 1.75rem;
+        margin: 0px auto;
+    }
+      
+      .about img{
+        max-width: 400px;
+        height: auto;
+        margin: 10px auto;
+      }
+
+      .about p{
+        font-size: 1rem;
+      }
+    
+      .nav-deals-open{
+        position: relative;
+        margin: 40% auto; 
+      }
+    
+      .nav-shop-open{
+        position: relative;
+        margin: 40% auto; 
+      }
+
+      .card{
+        max-width: 300px;
+        margin: 15px auto;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .card h1{
+        font-size: 1.75rem;
+        margin: 5px auto;
+    }
+
+    .card h2{
+        font-size: 1.25rem;
+    }
+   
+    .card button{
+        font-size: 1rem; 
+        margin: 5px auto; 
+    }
+    
+      .nav-checkout-open{
+        position: relative;
+        margin: 40% auto; 
+      }
+
+      .cart-items div{
+        margin: 10px 0px;
+        padding: 5px;
+    
+    }
+
+    .cart-items div h1{
+        font-size: 1rem;
+        margin: 20px auto;
+    }
+
+    .cart-items div p{
+        font-size: .6rem;
+        margin: 22px auto;
+    }
+
+    .cart-items div button{
+        margin: auto;
+        font-size: .6rem;
+        padding: 5px; 
+    }
+
+    .checkDiv{
+        width: 60%;
+        margin: 0px 0px 0px auto;
+     
+      }
+
+      .checkout input{
+        width: 50px;
+        height: auto;
+        margin: 0px 10px;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .checkout label{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+      .checkDiv button{
+        font-size: .75rem;
+        margin: 10px auto;
+      }
+
+    .nav-thankyou-open{
+        position: relative;
+        margin: 40% auto;
+    }
+
 }
 
 @media  (min-width: 577px) {
@@ -385,15 +430,20 @@ body{
         padding: 0px;
     }
 
-    .hamburger{
-        display: none;
-    }
-
     .action{
         width: 70%;
         display:flexbox;
         margin: 100px 0px 0px 0px;
     
+    }
+
+    .jumbotron img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
     }
 
     .jumbotron h1{
@@ -413,7 +463,6 @@ body{
         margin: 25px auto;
     }
 
-   
     .nav-about-open{
         width: 100%;
         height: auto;
