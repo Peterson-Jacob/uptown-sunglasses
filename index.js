@@ -19,21 +19,28 @@ const tl5 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true}
 
 
 
-  window.onresize = () =>{
-//   t.reverse(true)
-//   tl.reverse(true)
-//   tl2.reverse(true)
-//   tl3.reverse(true)
-//   tl4.reverse(true)
-//   tl5.reverse(true)
+  //window.onresize = () =>{
+ // t.reverse(true)
+ //  tl.reverse(true)
+  // tl2.reverse(true)
+  // tl3.reverse(true)
+ //  tl4.reverse(true)
+ //  tl5.reverse(true)
    
-  }
+//alert("resize");
+//let winWidth = document.body.offsetWidth;
+//alert(winWidth);
+//if(winWidth == 992){
+  //  location.reload();
+//}
+   // alert("stop");
+ // }
 
 //  const Something = () =>{
 
-// const mql = window.matchMedia('screen and (min-width: 992px)');
+ //const mql = window.matchMedia('screen and (min-width: 992px)');
 // // for tablets
-// const mql2 = window.matchMedia('screen and (min-width: 576px) and (max-width: 991px)');
+ //const mql2 = window.matchMedia('screen and (min-width: 576px) and (max-width: 991px)');
 
 // if(mql.matches){
 // 
@@ -47,6 +54,8 @@ const tl5 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true}
 // }
 
 //gsap.from('body',{duration: 2, opacity: 0})
+
+
 gsap.from('.cover', 1.5, {x: '-2000', opacity: 0})
 gsap.from('.header-logo',  {delay: 2, y: '100'})
 gsap.from('.header-logo',  {delay: 2, opacity: 0})
@@ -54,12 +63,13 @@ gsap.from('.action',  {delay: 2, x: '-100'})
 gsap.from('.action',  {delay: 2, opacity: 0})
 gsap.from('.list-item',  {delay: 2, y: '-100', opacity: 0, stagger: 0.25})
 
+
 let winWidth = document.body.offsetWidth;
 
-if(winWidth > 576 && winWidth < 991){
+if(winWidth <= 991){
   
   t.add('change')
-  t.to('.jumbotron', 1, {opacity: 0} )
+  t.to('.jumbotron', 1, {opacity: 0}, 'change')
   t.to('.jumbotron', {display: 'none'}, 'change')
   tl.to('.nav-about-open', {display: 'block'})
   tl.from('.about', {opacity: 0})
@@ -93,14 +103,10 @@ if(winWidth > 576 && winWidth < 991){
 }
 
 
-
  abtBtn.addEventListener('click', () =>{
   active(tl)
   toggleTween(tl)
- 
   
-
-
 })
 
 dlBtn.addEventListener('click', () =>{
@@ -136,8 +142,8 @@ logo.addEventListener('click', () =>{
   }
 })
 
-function active(z){
-  if(z.isActive() == true){
+function active(e){
+  if(e.isActive() == true){
     e.preventDefault();
     e.stopImmediatePropagation();
     return false;
@@ -146,24 +152,22 @@ function active(z){
 }
 
 function toggleTween(tween){ 
-  
-
+ 
   if(tween == tl){
-    
+
      if(tl.reversed() == false){
        t.reverse()
-       
      }
      if(tl.reversed() == true){
       t.play()
       
-    
     }
 
     if(tl5.reversed() == false){
       tl5.reverse(true)
      }
 
+    
     tl2.reverse(true)
     tl3.reverse(true)
     tl4.reverse(true)
