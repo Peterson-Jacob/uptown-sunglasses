@@ -38,7 +38,7 @@ const tl5 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true}
 
 //  const Something = () =>{
 
- //const mql = window.matchMedia('screen and (min-width: 992px)');
+// const mql = window.matchMedia('screen and (min-width: 992px)');
 // // for tablets
  //const mql2 = window.matchMedia('screen and (min-width: 576px) and (max-width: 991px)');
 
@@ -55,6 +55,7 @@ const tl5 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true}
 
 //gsap.from('body',{duration: 2, opacity: 0})
 
+let winWidth = document.body.offsetWidth;
 
 gsap.from('.cover', 1.5, {x: '-2000', opacity: 0})
 gsap.from('.header-logo',  {delay: 2, y: '100'})
@@ -64,7 +65,7 @@ gsap.from('.action',  {delay: 2, opacity: 0})
 gsap.from('.list-item',  {delay: 2, y: '-100', opacity: 0, stagger: 0.25})
 
 
-let winWidth = document.body.offsetWidth;
+
 
 if(winWidth <= 991){
   
