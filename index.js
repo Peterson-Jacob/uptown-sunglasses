@@ -17,52 +17,15 @@ const tl3 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true}
 const tl4 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
 const tl5 = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true});
 
-
-
-  //window.onresize = () =>{
- // t.reverse(true)
- //  tl.reverse(true)
-  // tl2.reverse(true)
-  // tl3.reverse(true)
- //  tl4.reverse(true)
- //  tl5.reverse(true)
-   
-//alert("resize");
-//let winWidth = document.body.offsetWidth;
-//alert(winWidth);
-//if(winWidth == 992){
-  //  location.reload();
-//}
-   // alert("stop");
- // }
-
-//  const Something = () =>{
-
-// const mql = window.matchMedia('screen and (min-width: 992px)');
-// // for tablets
- //const mql2 = window.matchMedia('screen and (min-width: 576px) and (max-width: 991px)');
-
-// if(mql.matches){
-// 
-// }
-
-// if(mql2.matches){
-//   alert('mql2 matchs')
-   
-// }
-
-// }
-
-//gsap.from('body',{duration: 2, opacity: 0})
-
 let winWidth = document.body.offsetWidth;
 
-gsap.from('.cover', 1.5, {x: '-2000', opacity: 0})
-gsap.from('.header-logo',  {delay: 2, y: '100'})
-gsap.from('.header-logo',  {delay: 2, opacity: 0})
-gsap.from('.action',  {delay: 2, x: '-100'})
-gsap.from('.action',  {delay: 2, opacity: 0})
-gsap.from('.list-item',  {delay: 2, y: '-100', opacity: 0, stagger: 0.25})
+gsap.from('.cover', 3, {opacity: 0})
+gsap.from('.header-logo',  {delay: 0, y: '100'})
+gsap.from('.header-logo',  {delay: 0, opacity: 0})
+gsap.from('.action',  {delay: 1, x: '-100'})
+gsap.from('.action',  {delay: 1, opacity: 0})
+gsap.to('.actionHeader', {delay: 0.75, duration: 2, text: "Z-Model Sunglasses", ease: "none"});
+gsap.from('.list-item',  {delay: 1, opacity: 0, stagger: 0.5})
 
 
 
