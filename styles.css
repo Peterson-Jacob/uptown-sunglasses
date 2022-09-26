@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: #06101b;
 }
 
 .overlay{
@@ -190,7 +190,7 @@ body{
 
   .checkout input{
     color: #ffffff;
-    background-color: black;
+    background-color: #06101b;
     border: none;
 
   }
