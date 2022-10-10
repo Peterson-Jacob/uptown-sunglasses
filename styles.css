@@ -12,10 +12,9 @@ body{
 
 .overlay{
     position:absolute;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -271,7 +270,11 @@ body{
 
     .action{
         width: 100%;
-        margin: 75% 0px 0px 0px;
+        margin: 150px 0px 25px 0px;
+    }
+
+    .overlay{
+        height: 100vh;
     }
 
     .jumbotron img{
@@ -437,6 +440,10 @@ body{
     
     }
 
+    .overlay{
+        height: 100%;
+    }
+
     .jumbotron img{
         position: absolute;
         width: 100%;
@@ -477,7 +484,7 @@ body{
     }
 
     .about p{
-        font-size: 1.15rem;
+        font-size: 1rem;
         width: 80%;
         margin: 10px auto;
         padding: 5px;
@@ -630,8 +637,8 @@ body{
     }
 
     .action{
-        width: 60%;
-        margin-top: 75px;
+        width: 70%;
+        margin-top: 15px;
         padding: 25px;
     }
 
@@ -654,7 +661,7 @@ body{
 
     .nav-about-open{
         width: 40%;
-        margin: 50px 0px;
+        margin: 20px 0px;
         position: absolute;
         right: 0;
         top: 0;
@@ -668,6 +675,11 @@ body{
 
     .about img{
         max-width: 300px;
+    }
+
+    .about p{
+        font-size: .75rem;
+    
     }
 
   
@@ -755,34 +767,8 @@ body{
 
 @media (min-width: 1200px) {
 
-    .header h1{
-        font-size: 2.5rem;
-    }
-
-    .header li{
-        font-size: 2rem;
-        margin: 0px 40px;
-    }
-
-    .fa-cart-shopping{
-        font-size: 2rem;
-    }
-
-
-    .jumbotron h1{
-        font-size: 2.5rem;
-    }
-
-    .jumbotron p{
-        font-size: 1.75rem;
-    }
-
-    .jumbotron button{
-        font-size: 1.4rem;
-    }
-
     .about h1, .headerDeals, .shop h1, .checkHeader{
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
     .about img{
@@ -790,24 +776,12 @@ body{
     }
 
     .about p{
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
+  
 
    .card{
     max-width: 350px;
-   }
-
-   .card h1{
-    font-size: 2.5rem;
-   }
-
-   .card h2{
-    font-size: 1.75rem;
-   }
-
-   .card button{
-    font-size: 1.25rem;
-    margin: 5px auto;
    }
 
    .checkDiv{
@@ -833,28 +807,45 @@ body{
     font-size: .75rem;
    }
 
-
 }
 
-@media(min-width: 1600px) {
+@media (min-width: 1600px) {
+
+    .header h1{
+        font-size: 2.25rem;
+    }
+
+    .header li{
+        font-size: 1.75rem;
+    }
+
+    .fa-cart-shopping{
+        font-size: 1.75rem;
+    }
+
+    .jumbotron h1{
+        font-size: 2.25rem;
+    }
+
+    .jumbotron p{
+        font-size: 1.75rem;
+    }
+
+    .jumbotron button{
+        font-size: 1rem;
+    }
 
     .action{
-        width: 50%;   
-    }
-
-    .about img{
-        max-width: 500px;
-    }
-
-    .checkDiv{
         width: 50%;
     }
 
-    .cart-items div{
-        width: 80%;
+    .about p{
+        font-size: 1.25rem;
+    
     }
-
+    
 }
+
 
 @media (orientation: landscape) and (max-width: 991px)  {
  
@@ -895,7 +886,5 @@ body{
     .jumbotron button{
         margin: 5px auto;
     }
-
-
 
 }
