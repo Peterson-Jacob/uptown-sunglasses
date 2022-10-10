@@ -51,7 +51,7 @@ if(winWidth <= 991){
   
     t.add('start')
     t.to(front, 1, {width: '60%', ease: Power4.out},'start')
-    t.to('.action', {width: '80%'}, 'start')
+    t.to('.action', {width: '100%'}, 'start')
     t.to('.list-item', { margin: 'auto'}, 'start')
     tl.to('.nav-about-open', {display: 'block'})
     tl.from( '.about' , 1, {x: '-500', opacity: 0}) 
